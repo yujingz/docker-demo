@@ -4,7 +4,7 @@ db:
     - "5432"
 web:
   build: .
-  command: bundle exec rackup -p 3000
+  command: bundle exec rails server -p 3000
   volumes:
     - .:/myapp
   ports:
